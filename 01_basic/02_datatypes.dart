@@ -146,4 +146,70 @@ void main() {
   List<String> villanos = ['Lex','Red Skull','Doom']; // Son base 0
   //                         0        1         2
 
+
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+
+  print(villanos);
+
+
+  var villanosSet = villanos.toSet();
+  print(villanosSet.toList());
+
+
+  // ===== Sets
+  // parecido a las listas
+  // No duplica la informacion
+
+  // var villanos2 = { 'Lex','Red Skull','Doom' };
+
+  Set<String> villanos2 = { 'Lex','Red Skull','Doom' };
+
+  villanos2.add('Duende Verde');
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+
+  print(villanos2);
+
+ // ====== Maps            Diccionarios / Objetos literales
+  Map<int, dynamic> ironman = {
+    1: 'Tony Stark',
+    2: 'Inteligencia y el dinero',
+    3: 9000,
+  };
+
+  // print( ironman[3] )
+  Map<String, dynamic> capitan = new Map();
+
+  capitan.addAll({
+    'nombre': 'Steve',
+    'poder' : 'Soportar droga sin morir',
+    'nivel' : 5000
+  });
+  // capitan.addAll(ironman);
+
+  print( capitan ); 
+
+  var ironman2 = {
+    'nombre': 'Tony Stark',
+    'poder': 'Inteligencia y el dinero',
+    'nivel': 9000,
+  };
+
+  print(ironman2['nivel']);
+
+  Map<int, int> tabla = {
+    1:2,
+    3:4,
+    5:6,
+    7:8,
+    9:10
+  };
+
+  print(tabla[10]);
+
 }
