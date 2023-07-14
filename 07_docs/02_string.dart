@@ -57,6 +57,6 @@ main(List<String> args) {
 
 
   // Convertir en mayuscula
-  print('Capitalizar: ${ nombreCompleto[ nombreCompleto.length - 1].toUpperCase() }');
+  print('Capitalizar: ${ nombreCompleto[ nombreCompleto.length - 1].toUpperCase() }'); // Pablo MadrigaL
 
 }
